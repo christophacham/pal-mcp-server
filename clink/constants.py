@@ -40,8 +40,8 @@ INTERNAL_DEFAULTS: dict[str, CLIInternalDefaults] = {
         runner="codex",
     ),
     "qwen": CLIInternalDefaults(
-        parser="claude_json",
-        additional_args=["-o", "json"],
+        parser="qwen_stream_json",
+        additional_args=["--output-format", "stream-json"],
         default_role_prompt="systemprompts/clink/default.txt",
         runner="qwen",
     ),

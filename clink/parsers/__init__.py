@@ -7,12 +7,14 @@ from .claude import ClaudeJSONParser
 from .codex import CodexJSONLParser
 from .copilot import CopilotPlaintextParser
 from .gemini import GeminiJSONParser
+from .qwen import QwenStreamJsonParser
 
 _PARSER_CLASSES: dict[str, type[BaseParser]] = {
     CodexJSONLParser.name: CodexJSONLParser,
     CopilotPlaintextParser.name: CopilotPlaintextParser,
     GeminiJSONParser.name: GeminiJSONParser,
     ClaudeJSONParser.name: ClaudeJSONParser,
+    QwenStreamJsonParser.name: QwenStreamJsonParser,
 }
 
 
