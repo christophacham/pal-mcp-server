@@ -31,8 +31,27 @@
         "deepseek-v3",
         "v3.2"
       ],
-      "context_window": 128000,
-      "max_output_tokens": 64000,
+      "context_window": 164000,
+      "max_output_tokens": 66000,
+      "supports_extended_thinking": true,
+      "supports_json_mode": true,
+      "supports_function_calling": true,
+      "supports_images": false,
+      "max_image_size_mb": 0.0,
+      "supports_temperature": true,
+      "allow_code_generation": true,
+      "description": "DeepSeek V3.2 - High-performance reasoning model optimized for code and general tasks. Built with DeepSeek Sparse Attention (DSA) for efficiency. Providers: Chutes. Latency (p50): 1.93s. Throughput (p50): 24.0 tok/s. Pricing: Input: $0.25/M tokens, Output: $0.38/M tokens. Max context: 164K tokens, Max output: 66K tokens.",
+      "intelligence_score": 17
+    },
+    {
+      "model_name": "x-ai/grok-4.1-fast",
+      "aliases": [
+        "grok-4.1",
+        "grok4.1",
+        "grok-fast"
+      ],
+      "context_window": 2000000,
+      "max_output_tokens": 30000,
       "supports_extended_thinking": false,
       "supports_json_mode": true,
       "supports_function_calling": true,
@@ -40,63 +59,8 @@
       "max_image_size_mb": 0.0,
       "supports_temperature": true,
       "allow_code_generation": true,
-      "description": "DeepSeek V3.2 - High-performance reasoning model optimized for code and general tasks",
+      "description": "xAI Grok 4.1 Fast - High-speed model for rapid response generation with strong reasoning capabilities. Providers: xAI. Latency: 4.28s. Throughput: 109tps. Uptime: 100%. Pricing: Input: $0.20/1M tokens (≤128K context) or $0.40/1M tokens (>128K context); Output: $0.50/1M tokens (≤128K context) or $1.00/1M tokens (>128K context); Cache: $0.05/1M tokens (both read and write).",
       "intelligence_score": 17
-    },
-    {
-      "model_name": "openrouter/gpt-oss-120b",
-      "aliases": [
-        "gpt-oss",
-        "gpt-oss-120b"
-      ],
-      "context_window": 128000,
-      "max_output_tokens": 64000,
-      "supports_extended_thinking": false,
-      "supports_json_mode": true,
-      "supports_function_calling": true,
-      "supports_images": false,
-      "max_image_size_mb": 0.0,
-      "supports_temperature": true,
-      "allow_code_generation": false,
-      "description": "GPT-OSS 120B - Open-source GPT model via OpenRouter",
-      "intelligence_score": 15
-    },
-    {
-      "model_name": "deepseek/deepseek-v3.2-speciale",
-      "aliases": [
-        "speciale",
-        "v3.2-speciale"
-      ],
-      "context_window": 128000,
-      "max_output_tokens": 64000,
-      "supports_extended_thinking": false,
-      "supports_json_mode": true,
-      "supports_function_calling": true,
-      "supports_images": false,
-      "max_image_size_mb": 0.0,
-      "supports_temperature": true,
-      "allow_code_generation": true,
-      "description": "DeepSeek V3.2 Speciale - Enhanced variant of the DeepSeek V3.2 model",
-      "intelligence_score": 17
-    },
-    {
-      "model_name": "z-ai/glm-4.7-flash",
-      "aliases": [
-        "glm",
-        "glm-flash",
-        "glm-4.7"
-      ],
-      "context_window": 128000,
-      "max_output_tokens": 64000,
-      "supports_extended_thinking": false,
-      "supports_json_mode": true,
-      "supports_function_calling": true,
-      "supports_images": false,
-      "max_image_size_mb": 0.0,
-      "supports_temperature": true,
-      "allow_code_generation": false,
-      "description": "GLM 4.7 Flash - Fast inference model from Zhipu AI",
-      "intelligence_score": 13
     }
   ]
 }
